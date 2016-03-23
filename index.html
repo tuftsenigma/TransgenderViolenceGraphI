@@ -34,6 +34,7 @@ OTHER DEALINGS IN THE SOFTWARE.
     <script type="text/javascript" src="scripts/radialProgress.js"></script>
 
     <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <button onclick="start()">See Results</button>
 
     <style>
 
@@ -107,7 +108,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 <body>
 
 <div id='outer' style="margin-top:40px; padding:10px">
-    <div id="main" style="width:600px; height:200px; margin: 0px auto; ">
+    <div id="main" style="width:800px; height:400px; margin: 0px auto; ">
         <div id="div1"></div>
         <div id="div2"></div>
         <div id="div3"></div>
@@ -129,7 +130,7 @@ OTHER DEALINGS IN THE SOFTWARE.
     var div5=d3.select(document.getElementById('div5'));
     var div6=d3.select(document.getElementById('div6'));
 
-    start();
+    //start();
 
 
 
@@ -180,7 +181,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
        
         var rp3 = radialProgress(document.getElementById('div3'))
-                .label("Hate Crime")
+                .label("Classified as Hate Crime")
                 .onClick(onClick2)
                 .diameter(200)
                 .value(31.8)
